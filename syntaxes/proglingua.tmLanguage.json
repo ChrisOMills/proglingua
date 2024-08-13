@@ -1,0 +1,64 @@
+{
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "name": "Proglingua",
+    "patterns": [
+        {
+            "include": "#keywords"
+        },
+        {
+            "include": "#context-names"
+        },
+        {
+            "include": "#definitions"
+        },
+        {
+            "include": "#strings"
+        }
+    ],
+    "repository": {
+        "keywords": {
+            "patterns": [
+                {
+                    "name": "keyword.control.proglingua",
+                    "match": "\\b(if|while|for|return)\\b"
+                },
+                {
+                    "name": "keyword.declaration.context.proglingua",
+                    "match": "\\b(Context)\\b"
+                },
+                {
+                    "name": "keyword.declaration.program.proglingua",
+                    "match": "\\b(Program)\\b"
+                },
+                {
+                    "name": "keyword.function.usecontext.proglingua",
+                    "match": "\\b(UseContext)\\b"
+                },
+                {
+                    "name": "keyword.other.definition.proglingua",
+                    "match": "\\b(Definition:)\\b"
+                }
+            ]
+        },
+        "context-names": {
+            "patterns": [
+                {
+                    "name": "entity.name.type.context.proglingua",
+                    "match": "\\b([A-Z][a-zA-Z0-9]+)\\b"
+                }
+            ]
+        },
+        "strings": {
+            "name": "string.quoted.double.proglingua",
+            "begin": "\"",
+            "end": "\"",
+            "patterns": [
+                {
+                    "name": "constant.character.escape.proglingua",
+                    "match": "\\\\."
+                }
+            ]
+        }
+    },
+    "scopeName": "source.proglingua"
+}

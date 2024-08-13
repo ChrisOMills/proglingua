@@ -1,0 +1,23 @@
+Context LegalJustice {
+    Definition: "the fair and equitable treatment under the law."
+}
+
+Context EthicalJustice {
+    Definition: "moral righteousness based on ethics rather than law."
+}
+
+Program LegalDecision {
+    EvaluateCase(caseDetails) {
+        // Check if the case aligns with the legal justice context
+        If (caseDetails.alignsWith(LegalJustice)) {
+            // If it aligns with legal justice, check for ethical justice
+            If (caseDetails.alignsWith(EthicalJustice)) {
+                Return "Decision is just both legally and ethically.";
+            } Else {
+                Return "Decision is legally just but ethically questionable.";
+            }
+        } Else {
+            Return "Decision fails legal justice.";
+        }
+    }
+}

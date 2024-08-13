@@ -1,0 +1,38 @@
+{
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": "keyword.control.proglingua",
+                "settings": {
+                    "foreground": "#FF6347" 
+                }
+            },
+            {
+                "scope": "keyword.declaration.context.proglingua",
+                "settings": {
+                    "foreground": "#4682B4" 
+                }
+            },
+            {
+                "scope": "keyword.declaration.program.proglingua",
+                "settings": {
+                    "foreground": "#32CD32" 
+                }
+            },
+            {
+                "scope": "keyword.function.usecontext.proglingua",
+                "settings": {
+                    "foreground": "#DA70D6" 
+                }
+            },
+            {
+                "scope": "keyword.other.definition.proglingua",
+                "settings": {
+                    "foreground": "#FFD700" 
+                }
+            }
+        ]
+    }
+    
+    
+}

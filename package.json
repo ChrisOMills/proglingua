@@ -1,0 +1,25 @@
+{
+  "name": "proglingua",
+  "displayName": "Proglingua",
+  "description": "A Context-Aware Programming Language Based on Wittgenstein’s Language Games",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.92.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "proglingua",
+      "aliases": ["Proglingua", "proglingua"],
+      "extensions": [".pgl"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "proglingua",
+      "scopeName": "source.proglingua",
+      "path": "./syntaxes/proglingua.tmLanguage.json"
+    }]
+  }
+}
